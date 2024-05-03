@@ -1,10 +1,24 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Steps
+
 1. run npx create-nextapp@latest
 2. npm install firebase to add firebase dependencies
-3.Create firebaseConfig.js and paste in the config from firebase
-4.
+   3.Create firebaseConfig.js and paste in the config from firebase
+
+## ScreenShots
+
+![alt text](image-1.png)
+![alt text](image.png)
+![alt text](image-2.png)
+
+## Approaches
+
+- **Sign In Form**: Implemented a sign-in form where users can sign in using email and password. Used `signInWithEmailAndPassword` method for this.
+- **Google Sign-In**: Utilized Google OAuth for sign-in with Google. Implemented using `GoogleAuthProvider` and `signInWithPopup` method.
+- **Error Handling**: Implemented error handling for incorrect email or password.
+- **User Authentication State Persistence**: Used `useEffect` and `onAuthStateChanged` to persist user authentication state across page reloads and navigations.
+- **User Log Out**: Implemented log out functionality using the `signOut` method from Firebase.
 
 ## Getting Started
 
